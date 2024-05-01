@@ -47,8 +47,8 @@ function validateUKPostcode($postcode) {
         // Checksthe query was successful
         if ($result) {
             echo "<p>Student Record has been Added!</p>";
-            header("Location: addstudent.php"); // Redirect to add students page
-            exit; // Make sure no code below is executed after the redirect
+            header("Location: addstudent.php");
+            exit; 
         } else {
             echo "Error inserting record: " . mysqli_error($conn);
         }
